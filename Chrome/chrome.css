@@ -1,0 +1,86 @@
+/* Hides side pannel of suggested videos */
+#related{
+    visibility: hidden;
+}
+
+/* Hides comment section */
+#comments{
+    visibility: hidden;
+}
+
+/* Hides homepage button */
+#homepage{
+    visibility: hidden;
+}
+
+/* Hides logo */
+#logo{
+    visibility: hidden;
+}
+
+/* Side Bar */
+
+/*      Hides 1st section except Home Button*/
+ytd-guide-section-renderer:nth-of-type(1) ytd-guide-entry-renderer:nth-of-type(n+2){
+    visibility: hidden;
+}
+
+/*      Hides 2nd section */
+ytd-guide-collapsible-section-entry-renderer{
+    visibility: hidden;
+}
+
+/*      Hides Subscriptions section */
+ytd-guide-section-renderer:nth-of-type(2){
+    visibility: hidden;
+}
+
+/*      Hides More From YouTube section */
+ytd-guide-section-renderer:nth-of-type(3){
+    visibility: hidden;
+}
+
+/* Hides sidebar */
+/*
+#scrim{
+    visibility: hidden;
+}*/
+
+/* Hides sidebar */
+/*
+#guide{
+    visibility: hidden;
+}*/
+
+/* Hides suggested videos on homepage (desktop) */
+.ytd-browse[page-subtype ="home"]{
+    visibility: hidden;
+}
+
+/* keeps search results*/
+.ytd-search{
+    visibility: visible !important;
+}
+
+/* Hides endscreen suggested videos */
+.html5-endscreen{
+    visibility: hidden;
+}
+
+
+/* Hides YouTube Apps button */
+ytd-topbar-menu-button-renderer:nth-of-type(2){
+    visibility: hidden;
+}
+
+/* Hides Notifications button */
+ytd-notification-topbar-button-renderer {
+    visibility: hidden;
+}
+
+/* Hides Mini Guide Menu elements */
+/* - Hides everything except the Home button */
+ytd-mini-guide-entry-renderer:nth-of-type(n+2){
+    visibility: hidden;
+}
+

@@ -1,0 +1,37 @@
+{
+
+    "manifest_version": 3,
+    "name": "YouTubeFocus",
+    "version": "1.0",
+  
+    "description": "Makes YouTube.com slightly less distracting.",
+  
+    
+    "icons": {
+      "48": "icons/yt-icon.png"
+    },
+
+
+    "action": {
+      "default_icon": {
+        "48": "icons/yt-icon.png"
+      }
+    },
+    
+    "content_scripts": [
+      {
+        "matches": ["*://*.youtube.com/*"],
+        "js": ["chrome.js"],
+        "css": ["chrome.css"]
+      }
+    ],
+
+    "options_ui": {
+      "page": "options.html",
+      "open_in_tab": false
+    },
+
+    "permissions": ["tabs", "browsingData","storage", "contextMenus", "activeTab"]
+ 
+  
+  }

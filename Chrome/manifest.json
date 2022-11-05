@@ -27,7 +27,7 @@
     ],
 
     "options_ui": {
-      "page": "options.html",
+      "page": "home.html",
       "open_in_tab": false
     },
 

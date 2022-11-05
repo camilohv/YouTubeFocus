@@ -1,0 +1,15 @@
+body {
+    width: 250px;
+    height: 500px;
+    background-color: red;
+    display: inline-block;
+}
+
+.settings {
+    width: 250px;
+}
+
+.settings label {
+    background-color: green;
+    display: block;
+}

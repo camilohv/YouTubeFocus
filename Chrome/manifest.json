@@ -13,9 +13,9 @@
 
 
     "action": {
-      "default_icon": {
-        "48": "icons/yt-icon.png"
-      }
+      "default_icon": "icons/yt-icon.png",
+      "default_popup": "home.html",
+      "default_title": "popup"
     },
     
     "content_scripts": [
@@ -31,7 +31,16 @@
       "open_in_tab": false
     },
 
-    "permissions": ["tabs", "browsingData","storage", "contextMenus", "activeTab"]
+    "permissions": [
+      "tabs", 
+      "browsingData",
+      "storage", 
+      "contextMenus", 
+      "activeTab",  
+      "scripting"
+    ]
+
+    
  
   
   }
